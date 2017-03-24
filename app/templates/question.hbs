@@ -1,3 +1,6 @@
 {{outlet}}
+<h3>Q:</h3>
 {{question-view question=model saveAnswer="saveAnswer"}}
+<h3>A:</h3>
 {{answer-tile answers=model.answers}}
+{{add-answer saveAnswer='saveAnswer' question=model}}

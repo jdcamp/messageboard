@@ -1,8 +1,10 @@
 {{outlet}}
 <div>
-  <h3>Questions</h3>
-  {{add-question saveQuestion='saveQuestion'}}
-  {{#each model.questions as |question|}}
-    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-  {{/each}}
+  <h3>Questions</h3> {{add-question saveQuestion='saveQuestion'}}
+  <ul class="list-group">
+    {{#each model.questions as |question|}}
+      <li class="list-group-item">{{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+      </li>
+    {{/each}}
+  </ul>
 </div>

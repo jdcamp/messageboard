@@ -1,5 +1,12 @@
 <div>
-  {{#each answers as |answer|}}
-  <h4>{{answer.author}}</h4>
-  {{/each}}
+  <ul class="list-group">
+    {{#each answers as |answer|}}
+      <li class="list-group-item">
+        <h4>By: {{answer.author}}</h4>
+        <p>
+          {{answer.body}}
+        </p>
+      </li>
+    {{/each}}
+  </ul>
 </div>

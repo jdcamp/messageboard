@@ -1,8 +1,14 @@
 <div class="question-view">
-  <h4>{{question.title}}</h4>
-  <h5>Asked by: {{question.author}}</h5>
-  <p>{{question.notes}}</p>
-</div>
-<div class="answers">
-  {{add-answer saveAnswer='saveAnswer' question=question}}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{question.title}}</h3>
+    </div>
+    <div class="panel-body">
+      <p>
+        {{question.notes}}
+      </p>
+      <h4>Asked by: {{question.author}}</h4>
+    </div>
+  </div>
+
 </div>
