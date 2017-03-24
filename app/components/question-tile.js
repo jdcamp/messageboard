@@ -3,7 +3,6 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     update(question, params) {
-      console.log('update function recieved');
       this.sendAction('update', question, params);
     },
     delete(question) {

@@ -16,9 +16,9 @@
         <label for="title">Question</label>
         {{input value=title id="title" placeholder=question.title}}
       </div>
-      <button {{action 'update' question}}>Save</button>
+      <button class="btn btn-primary" {{action 'update' question}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button class='update-button' {{action 'updateQuestion' question}}>Update</button>
+  <button class="btn btn-info" {{action 'updateQuestion' question}}>Update</button>
 {{/if}}

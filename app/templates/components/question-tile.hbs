@@ -4,5 +4,5 @@
   <h5>Asked by: {{question.author}}</h5>
   {{/link-to}}
   {{update-question question=question update="update"}}
-  <button {{action 'delete' question}}>Delete Question</button>
+  <button class="btn btn-danger" {{action 'delete' question}}>Delete Question</button>
 </div>

@@ -8,7 +8,6 @@ export default Ember.Component.extend({
         body: this.get('body'),
         question: this.get('question')
       };
-      console.log(params);
       this.sendAction('saveAnswer', params);
     }
   }

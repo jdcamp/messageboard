@@ -1,11 +1,14 @@
 <div class="container">
 
   <div class="jumbotron">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Blue_question_mark_icon.svg/1024px-Blue_question_mark_icon.svg.png" class="center-block header-image" alt="" />
     <h3>Welcome</h3>
   </div>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-      {{#link-to 'index'}}Home{{/link-to}}
+      {{#link-to 'index'}}
+      <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-home"></span></button>
+      {{/link-to}}
     </div>
   </nav>
   {{outlet}}

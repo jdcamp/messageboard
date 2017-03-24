@@ -9,7 +9,6 @@ export default Ember.Route.extend({
       },
         actions: {
           update(question, params) {
-            console.log('update function recieved');
             Object.keys(params).forEach(function(key) {
               if (params[key] !== undefined) {
                 question.set(key, params[key]);
@@ -17,7 +16,6 @@ export default Ember.Route.extend({
             });
             question.save();
             this.transitionTo('index');
-            console.log('update function executed');
           },
           saveQuestion(params) {
             var newQuestion = this.store.createRecord('question', params);
