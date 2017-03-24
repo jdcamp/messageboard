@@ -1,15 +1,15 @@
 {
   "questions": [{
     "author": "Veruca Salt",
-    "question": "San Francisco",
+    "title": "San Francisco",
     "notes": "Verrwerwuca Salt"
   }, {
     "author": "asdfas Salsdft",
-    "question": "Salsdftsdn Frasdfsdfncisco",
+    "title": "Salsdftsdn Frasdfsdfncisco",
     "notes": "Versdfq3rweuca Sweralt"
   }],
   "answers": [{
     "author": "San Francisco",
-    "answer": "Estate"
+    "body": "Estate"
     }]
 }
