@@ -2,6 +2,9 @@
   {{#link-to 'question' question}}
   <h3>{{question.title}}</h3>
   <h5>Asked by: {{question.author}}</h5>
+<h5 class='number-of-answers'>Number of Answers: {{question.answers.length}}</h5>
+
+
   {{/link-to}}
   {{update-question question=question update="update"}}
   <button class="btn btn-danger" {{action 'delete' question}}>Delete Question</button>

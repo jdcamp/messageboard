@@ -4,7 +4,8 @@
 .header-title {
   text-align: center;
 }
-.body {
-  background: black;
+.number-of-answers {
+  float: right;
 }
+
 @import "ember-bootstrap/bootstrap";
