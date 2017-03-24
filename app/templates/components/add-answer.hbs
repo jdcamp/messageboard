@@ -2,12 +2,12 @@
     <form>
       <div class="form-group">
         <label for="author">Name</label>
-        {{input value=author id="author"}}
+        {{input class="form-control" value=author id="author"}}
       </div>
 
       <div class="form-group">
         <label for="body">Answer</label>
-        {{input value=body id="body"}}
+        {{input class="form-control" value=body id="body"}}
       </div>
 
       <button class="btn btn-success"{{action 'saveAnswer'}}>Save</button>
